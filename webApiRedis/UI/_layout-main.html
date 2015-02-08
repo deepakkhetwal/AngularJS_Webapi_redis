@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html ng-app="homeModule">
+<head>
+    <base href="http://localhost:34052/UI/">
+    <meta name="viewport" content="width=device-width, user-scalable=no"/>
+    <title>User Logon</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="js/global.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="public/javascripts/vendor/angular.js"></script>
+    <script src="public/javascripts/vendor/angular-resource.js"></script>
+    <script src="public/javascripts/vendor/angular-route.js"></script>
+    <script src="public/javascripts/vendor/angular-cookies.js"></script>
+    <script src="public/javascripts/vendor/dexie.js"></script>  <!--for indexeddb-->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="js/modules/home-module.js"></script>
+    <script src="public/javascripts/application/common.js"></script>
+    <script src="js/services/admn/user-role-service.js"></script>
+    <script src="js/controllers/admn/user-controllers.js"></script>
+    <script src="js/services/admn/user-service.js"></script>
+    <script src="js/controllers/admn/user-role-controllers.js"></script>
+   
+    
+   
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2>USER ADMINISTRATION</h2>
+            </div>
+        </div>
+       
+        
+        <div class="alert alert-success hidden" id="globalMessageParent">
+          <button type="button" class="close" onclick="COMMON.closeGlobalMessageAlert()"><span>&times;</span><span class="sr-only">Close</span></button>
+          <span id="globalMessage"></span>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+         
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <a href="_layout-main.html#/admn/user-create" class="btn btn-primary"> ADD NEW USER </a> &nbsp;
+                <a href="_layout-main.html#/admn/user-create-offline" class="btn btn-warning"> ADD NEW USER OFFLINE </a> &nbsp;
+                <a href="_layout-main.html#/admn/user-offline-sync" class="btn btn-danger"> SYNCHRONIZE OFFLINE USER DATA </a> &nbsp;
+                <a href="_layout-main.html#/admn/user-role-list" class="btn btn-info"> USER ROLES </a> 
+            </div>
+        </div>
+        <div class="row"> &nbsp; </div>
+         <div class="row" ng-view>
+             
+         </div>
+         
+       </div> 
+</body>
+
+</html>
+<script>
+    //var db = new Dexie("UserDB");
+    //db.delete().then(function () {
+    //    console.log("Database successfully deleted");
+    //}).catch(function (err) {
+    //    console.error("Could not delete database");
+    //}).finally(function () {
+    //    // Do what should be done next...
+    //});
+    //var db = new Dexie("UserDB");
+    //db.version(1).stores({ users: "Key,Id,FirstName,LastName,RoleKey"});
+    //db.open(); // Aft
+</script>

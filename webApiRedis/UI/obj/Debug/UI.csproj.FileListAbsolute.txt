@@ -1,0 +1,6 @@
+C:\Work\rnd\redis\WebApiRedis\UI\bin\UI.dll.config
+C:\Work\rnd\redis\WebApiRedis\UI\bin\UI.dll
+C:\Work\rnd\redis\WebApiRedis\UI\bin\UI.pdb
+C:\Work\rnd\redis\WebApiRedis\UI\obj\Debug\UI.dll
+C:\Work\rnd\redis\WebApiRedis\UI\obj\Debug\UI.pdb
+C:\Work\rnd\redis\WebApiRedis\UI\obj\Debug\UI.csprojResolveAssemblyReference.cache

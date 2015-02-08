@@ -1,0 +1,47 @@
+﻿<div class="panel panel-info">
+    <div class="panel-heading">Add User Offline</div>
+    <div class="panel-body">
+        <form ng-submit="form.$valid && submit()" name="form" class="form-horizontal" role="form" novalidate>
+            <div class="form-group">
+                <label for="txtUserId" class="col-md-2 control-label">User Id </label>
+                <div class="col-md-10">
+                    <input type="text" class="form-control" id="txtUserId" name="txtUserId" placeholder="User Id" ng-model="Id" required username-validator>
+                    <div ng-show="form.$submitted || form.txtUserId.$touched">
+                        <span ng-show="form.txtUserId.$error.required" class="text-danger">User id is required</span>
+                        <div class="text-danger" ng-show="form.txtUserId.$error.userId">User already exists</div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="txtFirstName" class="col-md-2 control-label">First Name</label>
+                <div class="col-md-10">
+                    <input type="text" class="form-control" id="txtFirstName" name="txtFirstName" placeholder="Enter First Name" ng-model="FirstName" required>
+                    <span ng-show="form.txtFirstName.$error.required" class="text-danger">First Name is required</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="txtLastName">Last Name</label>
+                <div class="col-md-10">
+                    <input type="text" class="form-control" id="txtLastName" name="txtLastName" placeholder="Enter Last Name" ng-model="LastName" required>
+                    <span ng-show="form.txtLastName.$error.required" class="text-danger">Last Name is required</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="txtLastName">Role</label>
+
+                <div class="col-md-10">
+                    <select id="ddlRole" name="ddlRole" class="form-control" ng-model="selectedRole" required ng-options="item.RoleNM for item in roleList track by item.Key">
+                        <option value="">Select Role</option>
+                    </select>
+                    <span ng-show="form.ddlRole.$error.required" class="text-danger">Role is required</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <button type="submit" class="col-md-2 btn btn-success">Create User</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>

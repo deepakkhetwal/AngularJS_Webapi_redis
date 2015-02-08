@@ -1,0 +1,36 @@
+﻿<div class="row">
+    <div class="col-md-12">
+        <button type="button" class="btn btn-info btn-lg" ng-click="synchronize()">
+            <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> SYNCHRONIZE
+        </button>
+    </div>
+ 
+</div>
+<div class="row">
+    &nbsp;
+</div>
+<div class="table-responsive">
+   <table class="table table-striped table-condensed">
+        <thead class="btn-success">
+            <tr>
+                <th style="width:10%"> </th>
+                <th style="width:10%">Id</th>
+                <th style="width:30%">First Name</th>
+                <th style="width:30%">Last Name </th>
+                <th>Action</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="user in userList">
+                            <td style="width:10%"> <input name="MarkForSync.{{user.Id}}" ng-checked="selection.indexOf(user.Id) > -1" ng-click="toggleSelection(user.Id)" type="checkbox" /> </td>
+                            <td style="width:10%"> {{user.Id}} </td>
+                            <td style="width:30%"> {{user.FirstName}}</td>
+                            <td style="width:30%">{{user.LastName}}</td>
+                            <td style="width:10%"><button class="btn btn-danger" ng-click="deleteOfflineUserInfo(user.Id)">Delete</button></td>
+  
+            </tr>
+           
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,7 @@
+C:\Work\rnd\redis\WebApiRedis\WebApiUnitTest\bin\Debug\WebApiUnitTest.dll
+C:\Work\rnd\redis\WebApiRedis\WebApiUnitTest\bin\Debug\WebApiUnitTest.pdb
+C:\Work\rnd\redis\WebApiRedis\WebApiUnitTest\bin\Debug\Moq.dll
+C:\Work\rnd\redis\WebApiRedis\WebApiUnitTest\bin\Debug\Moq.xml
+C:\Work\rnd\redis\WebApiRedis\WebApiUnitTest\obj\Debug\WebApiUnitTest.dll
+C:\Work\rnd\redis\WebApiRedis\WebApiUnitTest\obj\Debug\WebApiUnitTest.pdb
+C:\Work\rnd\redis\WebApiRedis\WebApiUnitTest\obj\Debug\WebApiUnitTest.csprojResolveAssemblyReference.cache
